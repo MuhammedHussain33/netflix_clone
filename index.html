@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Netflix</title>
+</head>
+<body>
+
+    <div class="nav" id="nav">
+        <img src="images/Netflix-logo-red-black-png.png" alt="" class="nav_logo">
+        <img src="images/login logo.jpg" alt="" class="nav_avatar" onclick="location.href='https://www.netflix.com/in/Login'">
+
+    </div>
+    <!--header-->
+    <div class="banner">
+        <div class="banner_contents">
+            <h1 class="banner_title">Uncharted</h1>
+            <div class="banner_buttons">
+                <button class="banner_button" onclick="location.href='https://www.youtube.com/watch?v=eHp3MbsCbMg'">Play</button>
+                <button class="banner_button">My List</button>
+
+            </div>
+            <div class="banner_discription">
+              <b><stong>Victor Sullivan recruits Nathan Drake to help him find the lost fortune of Ferdinand Magellan.<br>However, they face competition from Santiago Moncada, who believes that the treasure belongs to him.</stong></b>
+
+            </div>
+        </div>
+        <div class="banner_fadebottom">
+
+        </div>
+    </div>
+    <!--Netflix Orginals-->
+    <div class="row">
+        <h2>NETFLIX ORGINAL</h2>
+        <div class="row_posters">
+            <img src="images/images1.avif" alt="" class="row_poster row_posterLarge"/>
+            <img src="images/image2.jpg" alt="" class="row_poster row_posterLarge"/>
+            <img src="images/image3.jpg" alt="" class="row_poster row_posterLarge"/>
+            <img src="images/image4.jpg" alt="" class="row_poster row_posterLarge"/>
+
+        </div>
+
+    </div>
+    <!--Trending Now-->
+    <div class="row">
+        <h2>Trending Now</h2>
+        <div class="row_posters">
+            <img src="images/small images 1.jpeg" alt="" class="row_poster "/>
+            <img src="images/small images 2.avif" alt="" class="row_poster "/>
+            <img src="images/small images 3.jpg" alt="" class="row_poster "/>
+            <img src="images/small images 4.jpg" alt="" class="row_poster "/>
+
+        </div>
+
+    </div>
+    <!--Top Rated-->
+    <div class="row">
+        <h2>Top Rated</h2>
+        <div class="row_posters">
+            <img src="images/small images 1.jpeg" alt="" class="row_poster "/>
+            <img src="images/small images 2.avif" alt="" class="row_poster "/>
+            <img src="images/small images 3.jpg" alt="" class="row_poster "/>
+            <img src="images/small images 4.jpg" alt="" class="row_poster "/>
+            <img src="images/images1.avif" alt="" class="row_poster "/>
+            <img src="images/image2.jpg" alt="" class="row_poster "/>
+            <img src="images/image3.jpg" alt="" class="row_poster "/>
+            <img src="images/image4.jpg" alt="" class="row_poster "/>
+
+        </div>
+
+    </div>
+    <!--Action Movies-->
+    <div class="row">
+        <h2>Action Movies</h2>
+        <div class="row_posters">
+            <img src="images/action movie1.jpg" alt="" class="row_poster "/>
+            <img src="images/action movie2.jpg" alt="" class="row_poster "/>
+            <img src="images/action movie3.webp" alt="" class="row_poster "/>
+            <img src="images/action movie4.webp" alt="" class="row_poster "/>
+
+        </div>
+
+    </div>
+    <!--Comedy Movies-->
+    <div class="row">
+        <h2>Comedy Movies</h2>
+        <div class="row_posters">
+            <img src="images/comedy movie1.webp" alt="" class="row_poster "/>
+            <img src="images/comedy movie2.jpg" alt="" class="row_poster "/>
+            <img src="images/comedy movie3.jpg" alt="" class="row_poster "/>
+            <img src="images/comedy movie4.jpg" alt="" class="row_poster "/>
+
+        </div>
+
+    </div>
+    <!--Horrer Movies-->
+    <div class="row">
+        <h2>Horror Movies</h2>
+        <div class="row_posters">
+            <img src="images/horror1.jpg" alt="" class="row_poster "/>
+            <img src="images/horror2.jpeg" alt="" class="row_poster "/>
+            <img src="images/horror3.webp" alt="" class="row_poster "/>
+            <img src="images/horror4.jpg" alt="" class="row_poster "/>
+
+        </div>
+           
+    </div>
+    <!--Horrer Movies-->
+    <div class="row">
+        <h2>Romantic Movies</h2>
+        <div class="row_posters">
+            <img src="images/rom1.jpeg" alt="" class="row_poster "/>
+            <img src="images/rom2.jpeg" alt="" class="row_poster "/>
+            <img src="images/rom3.jpeg" alt="" class="row_poster "/>
+            <img src="images/rom4.jpeg" alt="" class="row_poster "/>
+
+        </div>
+           
+    </div>
+    </div>
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >=50) {
+                nav.classList.add('nav_black')
+            }else{
+                nav.classList.remove('nav_black')
+            }
+        })
+    </script>
+</body>
+</html>
